@@ -1,0 +1,135 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+
+  <!-- Navbar brand -->
+  <mdb-navbar-brand><a class="navbar-brand" href="#">Escola Victor Sad</a></mdb-navbar-brand>
+
+  <!-- Collapsible content -->
+  <links>
+
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+              <a class="nav-link waves-light" mdbWavesEffect>Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link waves-light" mdbWavesEffect>Cursos Novos</a>
+          </li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown" dropdown>
+              <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                Cursos<span class="caret"></span></a>
+              <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Desenvolvimento Web</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Banco de dados</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Algoritmo de programação</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Matematica computacional</a>
+                  <a class="dropdown-item waves-light" mdbWavesEffect href="#">Desenvolvimento Mobile</a>
+              </div>
+          </li>
+
+      </ul>
+
+      <!-- Links -->
+
+<!-- Search form -->
+      <form class="form-inline waves-light" mdbWavesEffect>
+          <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Busca">
+          </div>
+          <div>
+          <ul class="navbar-nav ml-auto nav-flex-icons">
+            <li class="nav-item">
+              <a class="nav-link">
+                <mdb-icon fab icon="twitter"></mdb-icon>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">
+                <mdb-icon fab icon="google-plus"></mdb-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </form>
+  </links>
+</mdb-navbar>
+
+<div class="carousel-inner">
+<mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+    </video>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="https://mdbootstrap.com/img/video/forest.mp4" type="video/mp4" />
+    </video>
+  </mdb-carousel-item>
+  <mdb-carousel-item>
+    <video class="video-fluid" autoplay loop muted>
+      <source src="https://mdbootstrap.com/img/video/Tropical.mp4" type="video/mp4" />
+    </video>
+  </mdb-carousel-item>
+</mdb-carousel>
+</div>
+
+    <title>Escola do Victor</title>
+
+  <body>
+    <h1>Escola Victor Sad</h1>
+    <br>
+    <br>
+    <h2 class="web">Desenvolvimento WEB</h2>
+    <p style="color: blue">
+        De maneira bastante resumida, programadores web desenvolvem websites.<br> E isso quer dizer que é possível desenvolver desde
+        o site mais simples até aplicações bastante completas, e-commerces e redes sociais.
+    </p>
+    <h2>Desenvolvimento Mobile</h2>
+    <p style="color: blue">
+        O(a) Desenvolvedor(a) Mobile é responsável, resumidamente, pelo desenvolvimento de softwares e recursos para dispositivos móveis,<br>
+        que podem englobar desde sistemas extranet, intranet até aplicativos, <br>de acordo com as necessidades da empresa ou cliente para quem ele(a) trabalha.
+    </p>
+    <h2>Algoritmos de Programação</h2>
+    <p style="color: blue">
+        Lógica de programação é o modo como se escreve um programa de computador, um algoritmo.<br> Um algoritmo é uma sequência de passos para se executar uma função.
+        Um exemplo de algoritmo, fora da computação, é uma receita de bolo. <br>A linguagem de programação é somente como se escreve o algoritmo.
+    </p>
+    <h2>Banco de Dados</h2>
+    <p style="color: blue">
+        Um banco de dados é uma coleção de dados relacionados. Com dados,
+        queremos dizer fatos conhecidos que podem ser registrados e possuem significado implícito.<br> De forma direta e simples, podemos dizer que um banco de dados é uma coleção de dados.
+    </p>
+    <h2 id="matComp">Matemática Computacional</h2>
+    <p style="color: blue">
+        A matemática computacional é uma ramo da matemática e da computação que, <br>colaborando na solução de problemas de várias áreas,
+        tanto das ciências exatas, quanto de outras áreas quaisquer, <br>trabalha no desenvolvimento de modelos matemáticos,
+        para o tratamento de problemas complexos,<br> e desenvolvimento de métodos numéricos para obtenção de soluções.
+    </p>
+    <br>
+    <br>
+    <br>
+
+
+
+    <script>
+        $('.carousel').carousel()
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
